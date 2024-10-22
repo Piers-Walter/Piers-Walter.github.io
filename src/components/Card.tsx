@@ -34,7 +34,9 @@ const Card = () => {
                   />
                   <h1 className="text-3xl font-bold">{information.name}</h1>
                   <TypeAnimation
-                    sequence={information.typingLines.reduce((r: any[], e) => {
+                    sequence={information.typingLines.reduce<
+                      (string | number)[]
+                    >((r, e) => {
                       r.push(e, 2000);
                       return r;
                     }, [])}
