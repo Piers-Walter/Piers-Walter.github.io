@@ -7,6 +7,7 @@ export default function Document() {
       <body className="antialiased bg-gray-500">
         <Main />
         <NextScript />
+        <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
       </body>
     </Html>
   );
